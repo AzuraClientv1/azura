@@ -15,7 +15,7 @@ Library:Notify('Loading UI...');
 wait(3)
 ------------------------------------ WINDOW -----------------------------------
 local Window = Library:CreateWindow({
-    Title = 'pepsi.club',
+    Title = 'femboy',
     Center = true, 
     AutoShow = true,
 })
@@ -185,7 +185,7 @@ Text.Position = UDim2.new(0.0230768919, 0, 0, 0)
 Text.Size = UDim2.new(0.48046875, 0, 1, 0)
 Text.ZIndex = 4
 Text.Font = Enum.Font.RobotoMono
-Text.Text = "azura | user"
+Text.Text = "femboy | user"
 Text.TextColor3 = C3(65025, 65025, 65025)
 Text.TextSize = 14.000
 Text.TextStrokeTransparency = 0.000
@@ -1380,8 +1380,8 @@ SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({ 'MenuKeybind' }) 
 
-ThemeManager:SetFolder('azura')
-SaveManager:SetFolder('azura/main')
+ThemeManager:SetFolder('femboy')
+SaveManager:SetFolder('femboy/main')
 
 SaveManager:BuildConfigSection(Tabs['UI Settings']) 
 
@@ -1389,7 +1389,7 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
 
 local OthersSettings = Tabs['UI Settings']:AddRightGroupbox('Others')
 
-OthersSettings:AddInput('uinamechange', {Default = 'azura', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
+OthersSettings:AddInput('uinamechange', {Default = 'femboy', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
 Options.uinamechange:OnChanged(function()
     Window:SetWindowTitle(Options.uinamechange.Value)
 end)
@@ -2161,7 +2161,7 @@ function Movement()
                     if Toggles.mov_edgebugchat.Value == true then
                         getsenv(localPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).moveOldMessages()
                         getsenv(localPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage(
-                            "azura",
+                            "femboy",
                             "edgebugged",
                             C3(2, 103, 172), 
                             Color3.new(1,1,1),
@@ -2281,5 +2281,5 @@ runService.RenderStepped:Connect(function()
     do Misc() end
 end)
 
-Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to azura!');
+Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to femboy!');
 Library:Notify("Took to load "..string.format("%.5f", tick() - LoadingTime).." seconds.");
